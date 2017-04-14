@@ -1,10 +1,98 @@
 <!Doctype html>
-<head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<title>Ramdom Game</title>
+<head><style>
+    @import url(http://fonts.googleapis.com/css?family=Nunito);
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+.slide {
+  position: relative;
+  padding: 2vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+background-img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+background-img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+.slide_header{
+  text-align: center;
+      margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    letter-spacing: 4px;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 4px 2px #000;
+}
+#title {
+  background-image: url(https://scontent-ams3-1.cdninstagram.com/t51.2885-15/e35/17881062_1316959341715760_2438893966398062592_n.jpg);
+   background-attachment: fixed; 
+   text-align: center;
 
-<h1>추첨 결과를 보여줄 view입니다</h1>
-        <%=@my_percent%><br>
-        </html>
+}
+</style>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="/vendor/assets/stylesheets/style.css" type="text/css" rel="stylesheet">
+<tilte>Randomgame</tilte>
+</head>
+
+    <body>
+        
+      <div id="title" class="slide_header">
+       <img height="100%" src="https://d2hmp4n7p97ldw.cloudfront.net/assets/home/slide/02-slogan-f77dde1a45e987c0c1c2603a1dfcddbde2a7a1d5750e1ee7ff115e415a56b0db.png" alt="02 slogan">
+      </div>
+      
+
+</div>
+</body>
+</html>
